@@ -14,7 +14,8 @@
         "-LD:\\projects\\SFML\\lib",
         "-lsfml-graphics",
         "-lsfml-window",
-        "-lsfml-system"
+        "-lsfml-system",
+        "-Wl,-rpath,${fileDirname}/dlls"
       ],
       "options": {
         "cwd": "${fileDirname}"
