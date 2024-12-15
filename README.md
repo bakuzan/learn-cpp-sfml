@@ -15,4 +15,5 @@ Most likely this will not be of use to anyone.
 
 - Open a cmd prompt.
 - Enter `set PATH=<project_path>\dlls;%PATH%` to add the folder to your PATH for the session.
+- You can check it was added by running `for %i in ("%PATH:;=" "%") do @echo %i` to list the paths in the PATH
 - Run `<my_file>.exe` or whatever you were trying to run.
