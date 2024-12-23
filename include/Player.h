@@ -15,7 +15,7 @@ public:
     void Draw(sf::RenderWindow &window);
 
     sf::Vector2f GetPosition() { return body.getPosition(); }
-    Collider &GetCollider() { return collider; };
+    Collider GetCollider() { return Collider(body); };
 
 private:
     sf::RectangleShape body;
@@ -23,5 +23,4 @@ private:
     unsigned int row;
     float speed;
     bool faceRight;
-    Collider collider;
 };

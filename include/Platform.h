@@ -11,11 +11,10 @@ public:
     ~Platform();
 
     void Draw(sf::RenderWindow &window);
-    Collider &GetCollider() { return collider; };
+    Collider GetCollider() { return Collider(body); };
 
 private:
     sf::RectangleShape body;
-    Collider collider;
 };
 
 #endif // PLATFORM_H
